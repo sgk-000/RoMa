@@ -1,0 +1,13 @@
+torch==2.1.2
+einops
+torchvision==0.16.2
+opencv-python
+kornia
+albumentations
+loguru
+tqdm
+matplotlib
+h5py
+wandb
+timm
+#xformers # Optional, used for memefficient attention
