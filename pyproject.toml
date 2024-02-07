@@ -1,0 +1,29 @@
+[project]
+name = "roma"
+description = "Robust Dense Feature Matching"
+version = "0.0"
+authors = [
+    {name = "Johan Edstedt"},
+]
+readme = "README.md"
+requires-python = ">=3.6"
+license = {file = "LICENSE"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT Software License",
+    "Operating System :: OS Independent",
+]
+urls = {Repository = "https://github.com/sgk-000/RoMa.git"}
+dynamic = ["dependencies"]
+
+[project.optional-dependencies]
+dev = ["black", "flake8", "isort"]
+
+[tool.setuptools.packages.find]
+where = ["src"]  # list of folders that contain the packages (["."] by default)
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.isort]
+profile = "black"
